@@ -1,11 +1,11 @@
-const { By, key, Builder } = require("selenium-webdriver");
+const { By, Key, Builder } = require("selenium-webdriver");
 require("chromedriver");
 
 async function test_case() {
   let driver = await new Builder().forBrowser("chrome").build();
   await driver.get("https://www.google.com");
   await driver
-    .findElement(By.className("RNNXgb"))
+    .findElement(By.className("gLFyf"))
     .sendKeys("Hello World!", Key.RETURN);
 
   setInterval(() => {
